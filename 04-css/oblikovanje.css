@@ -1,6 +1,6 @@
-body {
+body h1 {
     /*  Barva pisave pod značko oz. oznako  */
-    color: #333333; 
+    color: #330066;  
     /*  Določanje pisave: brskalnik uporabi prvo v seznamu pisav, ki jo ima uporabnik nameščeno.
        Če ni nameščena nobena od naštetih pisav, se uporabi privzeta pisava brskalnika. */
     font-family: Garamond, "Hoefler Text", "Times New Roman", Times, serif;
@@ -16,7 +16,43 @@ body {
         preostanek pa se enakomerno razdeli med levim in desnim robom  */
     margin: auto;
     /*  Obojestranska poravnava besedila    */
-    text-align: justify;
+    text-align: left;
+}
+body h2 {
+    /*  Prostor nad zgornjim robom  */
+    margin-top: 2em;
+    /*  Širina zgornjega roba  */
+    border-top: 1px;
+    /*  Barva zgornjega roba  */
+    color: #AAAAAA;
+    /*  Stil zgornjega roba  */
+    border-top: solid;
+    /*  Višina notranjega praznega prostora zgoraj  */
+    padding-top: 0.5em;
+}
+
+#uvod {
+    /*  Širina notranjega prostora na vseh stranicah  */
+    padding: 2em;
+    /*  Barva ozadja notranjega prostora  */
+    background-color: rgb(51, 0, 102, 0.1);
+} 
+
+.notebox  {
+    border-color:  red;
+    font-weight:  bold;
+}
+
+.slika { 
+    font-size:  0.9em;
+    font-weight:  40%;
+    float:  right;
+    margin-left:  2em;
+}
+
+.slika img {
+    border-image-width:  100%;
+    height:  auto;
 }
 
 /*  Odstranimo podčrtovanje povezav in outline (ta se včasih pokaže kot kvadratek okrog povezave)  */
