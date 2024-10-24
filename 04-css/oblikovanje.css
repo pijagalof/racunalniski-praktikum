@@ -16,7 +16,7 @@ body h1 {
         preostanek pa se enakomerno razdeli med levim in desnim robom  */
     margin: auto;
     /*  Obojestranska poravnava besedila    */
-    text-align: left;
+    text-align: justify;
 }
 body h2 {
     /*  Prostor nad zgornjim robom  */
@@ -41,7 +41,8 @@ body h2 {
 
 .slika { 
     font-size:  0.9em;
-    font-weight:  40%;
+    width:  40%;
+    text-align: left;
     float:  right;
     margin-left:  2em;
 }
@@ -50,6 +51,22 @@ body h2 {
     border-image-width:  100%;
     height:  auto;
 }
+
+.slika p:last-child {
+    font-size: 0.8em;
+    background-color: #cc0000;
+    margin-top: 0.2em;
+}
+
+a::before {
+    content: "Povezava: ";
+    color: #bf39c4;
+}
+
+img {
+    border-radius: 50%;
+}
+
 
 /*  Odstranimo podčrtovanje povezav in outline (ta se včasih pokaže kot kvadratek okrog povezave)  */
 a { text-decoration: none; outline:none; }
