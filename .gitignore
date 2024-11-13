@@ -1,0 +1,17 @@
+# Ignoriranje datotek s končnico .log 
+*.log  
+
+# Ignoriranje datotek s končnico .aux 
+*.aux
+
+# Ignoriranje datotek s končnico .fdb_latexmk
+*.fdb_latexmk
+
+# Ignoriranje datotek s končnico .fls
+*.fls
+
+# Ignoriranje vseh datotek v mapi urnik.synctex.gz
+urnik.synctex.gz/
+
+#Ignoriranje datotek s končnico .synctex.gz
+*.synctex.gz
