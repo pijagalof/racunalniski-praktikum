@@ -15,3 +15,15 @@ urnik.synctex.gz/
 
 #Ignoriranje datotek s končnico .synctex.gz
 *.synctex.gz
+
+#Ignoriranje datotek s končnico .bbl
+*.bbl
+
+#Ignoriranje datotek s končnico .bib
+*.bib
+
+#Ignoriranje datotek s končnico .synctex(busy)
+*.synctex(busy)
+
+#Ignoriranje datotek s končnico .toc
+*.toc
