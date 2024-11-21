@@ -27,3 +27,12 @@ urnik.synctex.gz/
 
 #Ignoriranje datotek s končnico .toc
 *.toc
+
+#Ignoriranje datotek s končnico .nav
+*.nav
+
+#Ignoriranje datotek s končnico .out
+*.out
+
+#Ignoriranje datotek s končnico .snm
+*.snm
