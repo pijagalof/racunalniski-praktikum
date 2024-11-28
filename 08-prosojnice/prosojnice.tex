@@ -1,41 +1,63 @@
 \documentclass{beamer}
 
 \usepackage{predavanja}
+\usepackage{amsfonts}  % Dodajanje paketa za matematične pisave (npr. \mathbb)
+\usepackage{tikz}      % Za risanje diagramov znotraj dokumenta
+\usetikzlibrary{math}  % Uporaba dodatne knjižnice za matematične operacije v TikZ-u
+
+\usepackage{pgfplots}  % Za risanje grafov znotraj dokumenta
+\usepgfplotslibrary{external}  % Omogoči zunanjo obdelavo grafov za hitrejše kompiliranje
+
+\usepackage{array}  % Omogoči napredno delo s tabelami
 
 \theoremstyle{definition}
-\newtheorem{definicija}{Definicija}
+\newtheorem{definicija}{Definicija}  % Definicija za okolje definicija
+\newtheorem{vaja}{Vaja}
+\newtheorem{izrek}{Izrek}  % Definicija za okolje izrek
 
-\theoremstyle{plain}
-\newtheorem{izrek}{Izrek}
+% Definicija okrajšav za cela, realna in kompleksna števila
+\newcommand{\ZZ}{\mathbb{Z}}  % Cela števila
+\newcommand{\RR}{\mathbb{R}}  % Realna števila
+\newcommand{\CC}{\mathbb{C}}  % Kompleksna števila
+
+\begin{document}
 
 \title{Matematični izrazi in uporaba paketa \texttt{beamer}}
 \subtitle{\emph{Matematičnih} nalog ni treba reševati!}
 \institute{Fakulteta za matematiko in fiziko}
-\date{}
+\date{}  % Dodajanje praznega datuma
 
-\begin{document}
-
+% Prva stran z naslovom
 \frame{\titlepage}
 
+% Kratek pregled vsebine
 \begin{frame}
     \frametitle{Kratek pregled}
-    \tableofcontents 
+    \tableofcontents %[pausesections]
 \end{frame}
 
-
+% Sekcija 1 - Paket beamer
 \section{Paket \texttt{beamer}}
 \input{prosojnice/1-paket-beamer.tex}
 
+% Sekcija 2 - Paketa amsmath in amsfonts
 \section{Paketa \texttt{amsmath} in \texttt{amsfonts}}
 \input{prosojnice/2-paketa-amsmath-amsfonts.tex}
 
+% Sekcija 3 - Matematične vsebine (Analiza, logika, množice)
 \section[Matematika, 1. del\\\large{Analiza, logika, množice}]{Matematika, 1. del}
 \input{prosojnice/3-analiza-logika-mnozice.tex}
 
+% Sekcija 4 - Stolpci in slike
 \section{Stolpci in slike}
+\input{prosojnice/4-stolpci-slike.tex}
 
+% Sekcija 5 - Paket beamer in tabele
 \section{Paket \texttt{beamer} in tabele}
+\input{prosojnice/5-beamer-tabele.tex}
 
+% Sekcija 6 - Matematične vsebine (Zaporedja, algebra, grupe)
 \section[Matematika, 2. del\\\large{Zaporedja, algebra, grupe}]{Matematika, 2. del}
+\input{prosojnice/6-zaporedja-algebra-grupe.tex}
 
 \end{document}
